@@ -36,5 +36,12 @@ build:
 install modules:
 - sudo make modules_install
 
-generate initramfs
+generate initramfs:
 - sudo make install
+
+GRUB customization
+to alweys show GRUP prompt
+- /etc/default/grub
+- GRUB_HIDDEN_TIMEOUT_QUIET=false 
+- GRUB_TIMEOUT_STYLE=menu
+- sudo update-grub
