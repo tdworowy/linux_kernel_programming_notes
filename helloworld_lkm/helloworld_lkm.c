@@ -1,6 +1,6 @@
-#include "<linux/init.h>"
-#include "<linux/kernel.h>"
-#include "<linux/module.h>"
+#include <linux/init.h>
+#include <linux/kernel.h>
+#include <linux/module.h>
 
 MODULE_AUTHOR("null");
 MODULE_DESCRIPTION("LKP book:ch4/helloworld_lkm: hello, world, our first LKM");
