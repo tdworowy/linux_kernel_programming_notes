@@ -45,3 +45,18 @@ to alweys show GRUP prompt
 - GRUB_HIDDEN_TIMEOUT_QUIET=false 
 - GRUB_TIMEOUT_STYLE=menu
 - sudo update-grub
+
+
+------------
+load helloworld module
+- cd helloworld_lkm
+- make
+- sudo insmod ./helloworld_lkm.ko
+
+
+--------
+sudo dmesg <- print kernel log buffer   
+lsmod <- list loaded kernel modules
+sudo rmmod <name> <- unload kernel module
+
+journalctl -b -k --no-pager | tail -n2 <- example of using journalctl to get kernel logs
