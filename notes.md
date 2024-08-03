@@ -60,3 +60,5 @@ lsmod <- list loaded kernel modules
 sudo rmmod <name> <- unload kernel module
 
 journalctl -b -k --no-pager | tail -n2 <- example of using journalctl to get kernel logs
+
+sysctl -w kernel.printk="8 4 1 7" <- redirect all printk to console 
